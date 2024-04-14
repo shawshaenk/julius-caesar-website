@@ -1,0 +1,76 @@
+* {
+    font-family: "Cantarell";
+    color: white;
+}
+
+#background {
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    height: calc(100% + 20px);
+    width: calc(100% + 20px);
+    z-index: -1;
+    background-image: url("/home/sashank/Desktop/Main/Coding/Websites/Julius Caesar/the-fall-of-rome-painting-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+#titlecard {
+    margin: auto; 
+    margin-top: -5vh;
+    background-image: url("/home/sashank/Desktop/Main/Coding/Websites/Julius Caesar/deathofcaesar.jpg");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 90%;
+    height: 35vh;
+    animation: titlecardLoadIn 1s forwards;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0%;
+    padding-top: 17vh;
+    text-shadow: 5px 5px 10px black;
+    animation: titleLoadIn 0.75s forwards;
+    animation-delay: 0.5s;
+}
+
+.characterCard {
+    background: blue;
+    width: 70%;
+    height: 35vh;
+}
+
+/* .imgBlock {
+    
+}
+
+.characterAnalysisBlock {
+
+} */
+
+@keyframes titlecardLoadIn {
+    0% {
+        margin-top: 20vh;
+        opacity: 0%;
+    }
+    100% {
+        margin-top: 5vh;
+        opacity: 100%;
+    }
+}
+
+@keyframes titleLoadIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
