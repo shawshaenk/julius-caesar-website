@@ -152,6 +152,11 @@ body {
     background-position: center top;
 }
 
+#act2 {
+    background-image: url('https://images.fineartamerica.com/images-medium-large-5/julius-caesar-100-44-bc-on-his-way-to-the-senate-on-the-ides-of-march-oil-on-canvas-study-abel-de-pujol.jpg');
+    background-position: center center;
+}
+
 @keyframes titlecardLoadIn {
     0% {
         transform: translateY(20vh);
