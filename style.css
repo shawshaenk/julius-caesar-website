@@ -1,10 +1,9 @@
 * {
-    font-family: "Cantarell";
+    font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 
 body {
-    font-weight: bold;
     text-shadow: 5px 5px 10px black;
 }
 
@@ -83,7 +82,7 @@ body {
     transition-delay: 0.5s;
     font-size: 4em;
     text-align: center;
-    padding-top: 1vh;
+    padding-top: 2vh;
 }
 
 .actCardText.active {
@@ -92,7 +91,7 @@ body {
 
 .analysisCard {
     width: 70%;
-    height: 60vh;
+    height: 50vh;
     margin: auto;
     opacity: 0%;
     border-radius: 20px;
@@ -102,6 +101,7 @@ body {
     transform: translateY(10vh);
     overflow: auto;
     margin-bottom: 2vh;
+    padding-bottom: 2vh;
 }
 
 .analysisCard.active {
@@ -118,6 +118,10 @@ body {
     transition-delay: 0.5s;
     padding-left: 2vw;
     padding-right: 2vw;
+}
+
+.analysisCardTextP {
+    margin-top: -2vh;
 }
 
 .analysisCardTextTitle {
@@ -140,6 +144,11 @@ body {
 
 #act1scene2 {
     background-image: url('https://cdn2.rsc.org.uk/sitefinity/images/education/text-detectives-video-images/jc-4-2.jpg?sfvrsn=3ea40c21_2');
+    background-position: center top;
+}
+
+#act1scene3 {
+    background-image: url('https://cdn2.rsc.org.uk/sitefinity/images/education/Shakespeare-learning-Zone/caesar/cassius-tests-brutus-1-2/julius-caesar_-1968_-brutus-and-cassius_1968_photo-by-reg-wilson-_c_-rsc_62610.jpg?sfvrsn=aacd0521_6');
     background-position: center top;
 }
 
