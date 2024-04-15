@@ -3,70 +3,158 @@
     color: white;
 }
 
-#background {
-    position: fixed;
-    top: -10px;
-    left: -10px;
-    height: calc(100% + 20px);
-    width: calc(100% + 20px);
-    z-index: -1;
-    background-image: url("/home/sashank/Desktop/Main/Coding/Websites/Julius Caesar/the-fall-of-rome-painting-7.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+body {
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
 }
 
-#titlecard {
-    margin: auto; 
-    margin-top: -5vh;
-    background-image: url("/home/sashank/Desktop/Main/Coding/Websites/Julius Caesar/deathofcaesar.jpg");
-    /* background-position: center;
+#background {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    height: calc(100% + 40px);
+    width: calc(100% + 40px);
+    z-index: -1;
+    background-image: url("fallofrome.jpg");
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+#titleCard {
+    margin: auto; 
+    margin-top: 25vh;
+    background-image: url("deathofcaesar.jpg");
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 90%;
     height: 35vh;
     animation: titlecardLoadIn 1s forwards;
     border-radius: 20px;
+    overflow: auto;
 }
 
 .title {
     font-size: 5em;
-    font-weight: bold;
     text-align: center;
     opacity: 0%;
-    padding-top: 17vh;
-    text-shadow: 5px 5px 10px black;
-    animation: titleLoadIn 0.75s forwards;
+    padding-top: 16vh;
+    animation: textLoadIn 0.75s forwards;
     animation-delay: 0.5s;
 }
 
-.characterCard {
-    background: blue;
+#scrollPrompt {
+    opacity: 0%;
+    text-align: center;
+    animation: textLoadIn 0.75s forwards;
+    animation-delay: 1s;
+    font-size: 3em;
+}
+
+.actCard {
+    /* position: relative; */
+    transition: 1s all ease;
+    opacity: 0%;
+    width: 30%;
+    height: 20vh;
+    line-height: 20vh;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 25vh;
+    margin-bottom: 3vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(10vh);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.actCard.active {
+    opacity: 100%;
+    transform: translateY(0vh)
+}
+
+.actCardText {
+    opacity: 0%;
+    transition: 0.75s all ease;
+    transition-delay: 0.5s;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.actCardText.active {
+    opacity: 100%
+}
+
+.analysisCard {
     width: 70%;
-    height: 35vh;
+    height: 60vh;
+    margin: auto;
+    opacity: 0%;
+    border-radius: 20px;
+    transition: 1s all ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(10vh);
+    overflow: auto;
+    margin-bottom: 2vh;
 }
 
-/* .imgBlock {
-    
+.analysisCard.active {
+    opacity: 100%;
+    transform: translateY(0vh)
 }
 
-.characterAnalysisBlock {
+.analysisCardText {
+    padding-top: 1.5vh;
+    opacity: 0%;
+    font-size: 2em;
+    text-align: center;
+    transition: 0.75s all ease;
+    transition-delay: 0.5s;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
 
-} */
+.analysisCardTextTitle {
+    font-size: 3em;
+}
+
+.analysisCardText.active {
+    opacity: 100%;
+}
+
+#act1 {
+    background-image: url('https://miro.medium.com/v2/resize:fit:1120/1*Q-Kh2aE-BomHiU6L9d8EDQ.jpeg');
+    background-position: center top;
+}
+
+#act1scene1 {
+    background-image: url('https://study.com/cimages/multimages/16/caesar711853641480800817.jpeg');
+    background-position: center 15%;
+}
+
+#act1scene2 {
+    background-image: url('https://cdn2.rsc.org.uk/sitefinity/images/education/text-detectives-video-images/jc-4-2.jpg?sfvrsn=3ea40c21_2');
+    background-position: center top;
+}
 
 @keyframes titlecardLoadIn {
     0% {
-        margin-top: 20vh;
+        transform: translateY(20vh);
         opacity: 0%;
     }
     100% {
-        margin-top: 5vh;
+        transform: translateY(0);
         opacity: 100%;
     }
 }
 
-@keyframes titleLoadIn {
+@keyframes textLoadIn {
     0% {
         opacity: 0%;
     }
