@@ -39,7 +39,7 @@ body {
     font-size: 5em;
     text-align: center;
     opacity: 0%;
-    padding-top: 16vh;
+    padding-top: 15vh;
     animation: textLoadIn 0.75s forwards;
     animation-delay: 0.5s;
 }
@@ -53,12 +53,10 @@ body {
 }
 
 .actCard {
-    /* position: relative; */
     transition: 1s all ease;
     opacity: 0%;
     width: 30%;
     height: 20vh;
-    line-height: 20vh;
     border-radius: 20px;
     margin: auto;
     margin-top: 15vh;
@@ -67,8 +65,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     transform: translateY(10vh);
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: auto;
 }
 
 .actCard.active {
@@ -82,7 +79,7 @@ body {
     transition-delay: 0.5s;
     font-size: 4em;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 8vh;
 }
 
 .actCardText.active {
@@ -168,12 +165,12 @@ body {
 }
 
 #act2scene3 {
-    background-image: url('https://static.wixstatic.com/media/7c41ae_a61c31e6f9694a26b1e47d90fa7b6eaa~mv2.jpg/v1/fill/w_394,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Create%20a%20roman%20man%20just%20looking%20over%20a%20piece%20of%20parchment.jpg');
+    background-image: url('https://i.ytimg.com/vi/4u3e5XYsvug/maxresdefault.jpg');
     background-position: center top;
 }
 
 #act2scene4 {
-    background-image: url('https://static.wixstatic.com/media/7c41ae_e1cf89d74e92486985c469bbf099ba04~mv2.png/v1/fill/w_335,h_284,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7c41ae_e1cf89d74e92486985c469bbf099ba04~mv2.png');
+    background-image: url('https://www.cafeconvertes.com/wp-content/uploads/2020/09/Porcia_Catonis.jpg');
     background-position: center 20%;
 }
 
@@ -193,17 +190,17 @@ body {
 }
 
 #act3scene3 {
-    background-image: url('https://image.jimcdn.com/app/cms/image/transf/dimension=1040x10000:format=jpg/path/s2217cd0bb1220415/image/i28b259dae72375e6/version/1684705709/when-did-rome-really-fall.jpg');
+    background-image: url('https://as1.ftcdn.net/v2/jpg/05/73/41/42/1000_F_573414275_Ra4j5htVrnl8yPneccfTMD09reNMb4BF.jpg');
     background-position: center center;
 }
 
 #act4 {
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a1e02d0-6abf-46b4-8014-322f4fb2e439/dg2shx6-79675d8f-b604-4eab-94c3-5f96bb2be39a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdhMWUwMmQwLTZhYmYtNDZiNC04MDE0LTMyMmY0ZmIyZTQzOVwvZGcyc2h4Ni03OTY3NWQ4Zi1iNjA0LTRlYWItOTRjMy01Zjk2YmIyYmUzOWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.M7PnRMrVI6NKNib64yN3LklpMj9zavMjROJIyI3yskk');
-    background-position: center 10%;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/05/69/21/48/1000_F_569214885_h63djTJFGRo1P61zo0amspLjjCaQp4ab.jpg');
+    background-position: center top;
 }
 
 #act4scene1 {
-    background-image: url('https://static.wixstatic.com/media/7c41ae_dacc4e8a3cc44339b6a8cf9099cc16b0~mv2.jpg/v1/fill/w_350,h_314,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Two%20roman%20general%20sitting%20and%20having%20a%20d.jpg');
+    background-image: url('https://www.historyanswers.co.uk/wp-content/uploads/2016/01/201817-stranger.jpg');
     background-position: center top;
 }
 
@@ -223,7 +220,7 @@ body {
 }
 
 #act5scene1 {
-    background-image: url('https://static.wixstatic.com/media/7c41ae_de8f0852547845f086114670ddbcab2f~mv2.jpg/v1/fill/w_371,h_371,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4%20roman%20general%20meeting%20each%20other%20with%20.jpg');
+    background-image: url('http://www.ancient.eu/uploads/images/2286.jpg?v=1485680597');
     background-position: center top;
 }
 
@@ -238,8 +235,8 @@ body {
 }
 
 #connections {
-    background-image: url('https://wallpapercave.com/wp/wp7515712.jpg');
-    background-position: center top;
+    background-image: url('https://i.redd.it/gcdx674kmr611.jpg');
+    background-position: center 10%;
 }
 
 @keyframes titlecardLoadIn {
